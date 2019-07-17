@@ -96,8 +96,8 @@ header img{
 }
 
 .content {
-    margin-left:25%;
-    width: 70%;
+    float:right;
+    width: 75%;
     padding: 10px;
 }
 
