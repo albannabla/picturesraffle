@@ -28,6 +28,8 @@ ul{
     border:0;
     text-align: center;
     border-radius: 25px;
+    margin-left: 20px;
+
 }
 
 .button:active {
@@ -52,7 +54,7 @@ a:active {
     color:orange;
 }
 
-.current {
+.current a {
     color: orange;
 }
 
@@ -99,12 +101,20 @@ header img{
     padding: 10px;
 }
 
+.content img {
+    width:70%;
+    padding: 20px 20px;
+}
+
 
 nav {
     text-align: center;
     padding: 0px;
 }
 
+.navigation {
+
+}
 /* footer */
 
 footer {
