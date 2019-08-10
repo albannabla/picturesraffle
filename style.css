@@ -106,6 +106,10 @@ header img{
     padding: 20px 20px;
 }
 
+.content a {
+    text-decoration: underline;
+}
+
 
 nav {
     text-align: center;
