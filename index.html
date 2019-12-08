@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width">
         <meta name="description" content="A random raffle from an array list of names, showing name and picture of each draft">
         <meta name="author" content="Alban Nabla">
+        <link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
         <script type="text/javascript">
             var initial_list = ["Claudio","Anna","Giorgio","Luca", "Marta"];
             var current_list = [];
@@ -30,36 +31,31 @@
 
     <body>
         <header>
-        <div class="container">
-            <h1 id="master-title">CHRISTMAS RAFFLE</h1>
-        </div>
+            <h1 id="master-title">Lucky Draw</h1>
         </header>
-        
-        <div class="container">
-            <aside class="sidebar">
-                <div id="sidebar-title">
-                    <h3>Remaining Tickets:</h3>
-                    <p id="lista"></p>
-                </div>
-            </aside>
 
+        <container>
             <div class="content">
+                <img id="foto" src="image/start.jpg" width="400" height="500">
                 <h2>And the winner is... </h2>
-                <img id="foto" src="image/start.jpg" width="200" height="300">
                 <p id="picked"></p>
             </div>    
-        </div>
-        <nav>
-            <div class="container">
+
+            <nav>
                 <button onclick="start_list()">RESET</button>
                 <button onclick="draw_name()">DRAW NEXT NAME</button>
+            </nav>
+
+        </container>
+
+        <div class="sidebar">
+            <div id="sidebar-title">
+                <h3>Remaining Tickets:</h3>
+                <p id="lista"></p>
             </div>
-        </nav>
-        
-        <div class="container">
-            <footer>
-            </footer>
         </div>
+
+
     </body>
 </html>
 
