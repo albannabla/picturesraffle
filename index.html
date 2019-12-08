@@ -38,28 +38,28 @@
 
         <div class="container">
             <div class="content">
-                <img id="foto" src="image/start.jpg">
-                <h2>And the winner is... </h2>
-                <h2 id="picked"></h2>
-            </div>    
+                <img id="foto" src="image/start.jpg">              
+            </div>  
 
-            <nav>
-                <button onclick="start_list()">RESET</button>
-                <button onclick="draw_name()">DRAW NEXT NAME</button>
-            </nav>
+            <div class="sidebar">
+                <nav>
+                    <button onclick="start_list()">Start</button>
+                    <button onclick="draw_name()">Draw</button>
+                </nav>
 
-        </div>
-
-        <div class="sidebar">
-            <div class="container">
-                <div id="sidebar-title">
+                <div id="utility">
                     <h3>Remaining Tickets:</h3>
                     <p id="lista"></p>
                 </div>
             </div>
         </div>
 
-
+        <div class="footer">
+            <div class="container">
+                <h2 id="footer-title">And the winner is... </h2>
+                <h2 id="picked"></h2>
+            </div>
+        </div>
     </body>
 </html>
 
