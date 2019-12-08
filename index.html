@@ -31,14 +31,16 @@
 
     <body>
         <header>
+            <div class="container">
             <h1 id="master-title">Lucky Draw</h1>
+            </div>    
         </header>
 
-        <container>
+        <div class="container">
             <div class="content">
-                <img id="foto" src="image/start.jpg" width="400" height="500">
+                <img id="foto" src="image/start.jpg">
                 <h2>And the winner is... </h2>
-                <p id="picked"></p>
+                <h2 id="picked"></h2>
             </div>    
 
             <nav>
@@ -46,12 +48,14 @@
                 <button onclick="draw_name()">DRAW NEXT NAME</button>
             </nav>
 
-        </container>
+        </div>
 
         <div class="sidebar">
-            <div id="sidebar-title">
-                <h3>Remaining Tickets:</h3>
-                <p id="lista"></p>
+            <div class="container">
+                <div id="sidebar-title">
+                    <h3>Remaining Tickets:</h3>
+                    <p id="lista"></p>
+                </div>
             </div>
         </div>
 
