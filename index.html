@@ -13,15 +13,16 @@
             function start_list() {
                 current_list = initial_list.slice();
                 document.getElementById("lista").innerHTML = current_list.length + "<br>"+ current_list;
-                //document.getElementById("lista").innerHTML = current_list; 
+                document.getElementById("foto").src = "image/start.jpg";
             }
-            function draw_name() {
+            function draw_name() {if (current_list.length > 0)
+                {
                 var pick = Math.floor(Math.random() * current_list.length);
                 var chosen = current_list.splice(pick,1);
                 document.getElementById("lista").innerHTML = current_list.length + "<br>"+ current_list; 
                 document.getElementById("picked").innerHTML = chosen[0] + "<br>";
-                document.getElementById("foto").innerHTML = "<img src='image/"+chosen[0] +".jpg'>";
-
+                document.getElementById("foto").src = "image/"+ chosen[0] +".jpg";
+                }
             }
             
         </script>
@@ -43,9 +44,9 @@
             </aside>
 
             <div class="content">
-                <h2>LAST DRAWN TICKET WAS: </h2>
+                <h2>And the winner is... </h2>
+                <img id="foto" src="image/start.jpg" width="200" height="300">
                 <p id="picked"></p>
-                <p id="foto"></p>
             </div>    
         </div>
         <nav>

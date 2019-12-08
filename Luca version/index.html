@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+    var SecArry = [];
+    var MyArray = ["luca", "noemi", "claudio", "francesco", "antonio", "laura", "sergio", "vinecnzo", "alessandro", "paola"];  
+    function mio() {
+    var y = MyArray.length;
+    document.getElementById("lung").innerHTML = y;
+    var x =Math.floor(Math.random() * y); 
+    document.getElementById("pippo").innerHTML = MyArray[x];
+    document.getElementById("myImg").src = MyArray[x] +  ".jpg";
+    SecArry.push(MyArray[x]);
+    document.getElementById("pino").innerHTML = SecArry.join();
+    MyArray.splice(x,1);
+    document.getElementById("dai").innerHTML = MyArray.join();
+    } 
+    </script>
+
+    
+</head>
+
+<body>
+<p>il sorteggiato e': </p><h2 id="pippo"> Nome</h2>
+<img id="myImg" src="io.jpg" width="107" height="98">
+<p>Elenco sorteggiati: </p><h2 id="pino"> Lista</h2>
+<p>Elenco Nomi</p><h2 id="dai">Lista</h2>
+<p id="lung">X</p>
+<button onclick="mio()">Click me</button>
+
+
+
+</body>
+</html>
