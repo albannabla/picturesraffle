@@ -1,0 +1,1 @@
+var initial_list = ["Claudio","Anna","Giorgio","Luca", "Marta"];
