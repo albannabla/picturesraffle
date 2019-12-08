@@ -9,14 +9,24 @@
         <meta name="author" content="Alban Nabla">
         <script type="text/javascript">
             var initial_list = ["Claudio","Anna","Giorgio","Luca", "Marta"];
-            var i = ""
+            var current_list = [];
             function start_list() {
-                for i in initial_list {
-                    document.getElementById("namelist").innerHTML = "<li>"+ i + "<li>";
-                }
+                current_list = initial_list.slice();
+                document.getElementById("lista").innerHTML = current_list.length + "<br>"+ current_list;
+                //document.getElementById("lista").innerHTML = current_list; 
             }
+            function draw_name() {
+                var pick = Math.floor(Math.random() * current_list.length);
+                var chosen = current_list.splice(pick,1);
+                document.getElementById("lista").innerHTML = current_list.length + "<br>"+ current_list; 
+                document.getElementById("picked").innerHTML = chosen[0] + "<br>";
+                document.getElementById("foto").innerHTML = "<img src='image/"+chosen[0] +".jpg'>";
+
+            }
+            
         </script>
     </head>
+
     <body>
         <header>
         <div class="container">
@@ -28,20 +38,20 @@
             <aside class="sidebar">
                 <div id="sidebar-title">
                     <h3>Remaining Tickets:</h3>
+                    <p id="lista"></p>
                 </div>
-                <ul class="namelist">
-                </ul>
             </aside>
 
             <div class="content">
                 <h2>LAST DRAWN TICKET WAS: </h2>
-                <img src="image/SC.jpg">
+                <p id="picked"></p>
+                <p id="foto"></p>
             </div>    
         </div>
         <nav>
             <div class="container">
                 <button onclick="start_list()">RESET</button>
-                <button>DRAW NEXT NAME</button>
+                <button onclick="draw_name()">DRAW NEXT NAME</button>
             </div>
         </nav>
         
