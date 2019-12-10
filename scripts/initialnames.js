@@ -1,1 +1,1 @@
-var initial_list = ["Claudio","Anna","Giorgio","Luca", "Marta"];
+var initial_list = ["Joel Coverdale","Alvin Luk","Angus Choy","Ashley Chan","Barbara Wang","Cheryl Long","Claire Seah","Cody Chu","David Sin","HeiJing Tsang","Hugo Lee","Janny Lam","Joseph AuYeung","Coco Liu","Kyle Ng","Ellen Zhang","Rebecca Leung","Samuel Yu","Scott Kil","Tracy Chan","Young Guo"];
