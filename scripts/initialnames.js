@@ -46,7 +46,19 @@ var initial_list = ["Joel Coverdale",
 "Rick Chau",
 "Roy Wong",
 "Thibault Bruschet",
-"Youjin Kim"
+"Youjin Kim",
+"Bella Chen",
+"Ernest Kong",
+"Helen Cheung",
+"Jan Throwirth",
+"Soyoung Sin",
+"Stefan Morgenstern",
+"Joe Poon",
+"Michelle Chang",
+"Andrew Jones",
+"Sonia Hung",
+"Ivan Wong",
+"Jacob Chee"
 ];
 
 
