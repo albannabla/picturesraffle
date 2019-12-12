@@ -13,7 +13,7 @@ body{
 }
 
 #master-title {
-    font-size: 4vw;
+    font-size: 5vw;
     color:gold;
     text-shadow: 1px 1px 0px #ededed, 4px 4px 0px rgba(0,0,0,0.15);
 }
@@ -29,7 +29,7 @@ body{
 }
 
 img {
-    width: 14vw;
+    width: 15vw;
     height: 26vh;
     border-radius: 50px;
     line-height: 0px;
