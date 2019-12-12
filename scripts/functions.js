@@ -3,6 +3,7 @@ function start_list() {
     current_list = initial_list.slice();
     document.getElementById("lista").innerHTML = current_list.length + "<br>"+ current_list;
     document.getElementById("foto").src = "image/start.jpg";
+    document.getElementById("picked").innerHTML = "";
 }
 function draw_name() {if (current_list.length > 0)
     {
