@@ -9,57 +9,20 @@
         <meta name="author" content="Alban Nabla">
         <link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
         <script type="text/javascript" src=scripts/initialnames.js></script>
-        <script type="text/javascript">
-            var current_list = [];
-            function start_list() {
-                current_list = initial_list.slice();
-                document.getElementById("lista").innerHTML = current_list.length + "<br>"+ current_list;
-                document.getElementById("foto").src = "image/start.jpg";
-            }
-            function draw_name() {if (current_list.length > 0)
-                {
-                var pick = Math.floor(Math.random() * current_list.length);
-                var chosen = current_list.splice(pick,1);
-                document.getElementById("lista").innerHTML = current_list.length + "<br>"+ current_list; 
-                document.getElementById("picked").innerHTML = chosen[0] + "<br>";
-                document.getElementById("foto").src = "image/"+ chosen[0] +".jpg";
-                }
-            }
-            
-        </script>
+        <script type="text/javascript" src=scripts/functions.js></script>
     </head>
 
     <body>
-        <header>
-            <div class="container">
-            <h1 id="master-title">Christmas Lucky Draw</h1>
-            </div>    
-        </header>
-
-        <div class="container">
-            <div class="content">
-                <img id="foto" src="image/start.jpg">              
-            </div>  
-
-            <div class="sidebar">
-                <nav>
-                    <button onclick="start_list()">Start</button>
-                    <button onclick="draw_name()">Draw</button>
-                </nav>
-
-                <div id="utility">
-                    <h3>Remaining Tickets:</h3>
-                    <p id="lista"></p>
-                </div>
-            </div>
+        <h1 id="master-title">Christmas Lucky Draw</h1>
+        <h2 id="content-title">And the winner is... </h2>
+        <h1 id="picked"></h1>
+        <div>
+        	<img id="foto" src="image/start.jpg"> 
         </div>
-
-        <div class="footer">
-            <div class="container">
-                <h2 id="footer-title">And the winner is... </h2>
-                <h2 id="picked"></h2>
-            </div>
-        </div>
+       	<button onclick="start_list()">Start</button>
+	    <button onclick="draw_name()">Draw</button> 
+	    <h3 id="utility">Remaining Tickets:</h3>
+	    <h4 id="lista"></h4>
     </body>
 </html>
 
