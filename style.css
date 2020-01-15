@@ -7,9 +7,13 @@ body{
     background-color:#f4f4f4;
     padding:0;
     margin:0;
+<<<<<<< HEAD
     font-family: cursive;
     text-align: center;
     color: white;
+=======
+    width:100%;
+>>>>>>> c61de6beedab361f5d88f221652a34550e31e7fa
 }
 
 #master-title {
@@ -18,6 +22,7 @@ body{
     text-shadow: 1px 1px 0px #ededed, 4px 4px 0px rgba(0,0,0,0.15);
 }
 
+<<<<<<< HEAD
 #content-title {
     line-height: 3px;
 }
@@ -46,6 +51,8 @@ button:hover {
 
 /* OLD FILE 
 
+=======
+>>>>>>> c61de6beedab361f5d88f221652a34550e31e7fa
 .container{
     width:80%;
     height:auto;
@@ -111,7 +118,11 @@ h1 {
 }
 
 
+<<<<<<< HEAD
 /* Sidebar 
+=======
+/* Sidebar */
+>>>>>>> c61de6beedab361f5d88f221652a34550e31e7fa
 
 
 .sidebarL {
@@ -144,7 +155,12 @@ img {
 }
 
 
+<<<<<<< HEAD
 /* footer 
+
+=======
+/* footer */
+>>>>>>> c61de6beedab361f5d88f221652a34550e31e7fa
 
 
 .footer {
@@ -162,4 +178,8 @@ nav {
     line-height: 0px;
 }
 
+<<<<<<< HEAD
 */
+=======
+
+>>>>>>> c61de6beedab361f5d88f221652a34550e31e7fa
