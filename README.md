@@ -10,12 +10,14 @@ Features:
 - draw pictures and names
 - remove names from the list while they are being picked
 - easy to customize
+- optimized for 16:9 full screen
 
 Quick Set-up:
 - modify initialnames.js to include all participants to the Lucky Draw
-- place in the images folder all pictures
+- place in the images folder all pictures (works best if pictures are square)
 - make sure all pictures are named exactly as the name specified in initialnames.js and are in .jpg format
 - substitute background.jpg and start.jpg (optional)
+- press START to begin Lucky Draw and then keep drawing names for as many prizes are available
 
 ---
 permalink: /index.html
