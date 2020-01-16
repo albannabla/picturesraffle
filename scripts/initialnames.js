@@ -1,9 +1,9 @@
 var initial_list = [
-'Claudio',
-'Marcus',
-'Tracy',
-'Emily',
-'Henry'
+'claudio',
+'marcus',
+'tracy',
+'emily',
+'henry'
 ];
 
 
